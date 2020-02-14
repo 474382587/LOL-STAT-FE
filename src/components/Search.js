@@ -21,7 +21,7 @@ const Search = () => {
         if (!!summoner) {
             try {
                 const arr = await axios.get(
-                    `http://localhost:5000/${summoner}`
+                    `https://modest-chandrasekhar-133b5f.netlify.com/.netlify/functions/server/${summoner}`
                 );
                 setMatches(processMatches(arr.data.matchResults));
             } catch (error) {
