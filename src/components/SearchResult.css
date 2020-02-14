@@ -1,0 +1,35 @@
+
+.result-container {
+    text-align: left;
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.result-container > div {
+    width: 20%;
+    min-width: 80px;
+    padding: 20px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.result-container:nth-child(even) {
+    background-color: #e3e3e3;
+}
+.result-container > div:first-child {
+    border-left: 1px solid #e3e3e3;
+}
+.result-container > div:last-child {
+    border-right: 1px solid #e3e3e3;
+}
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.flex > div:first-child {
+    margin-right: 30px;
+}
